@@ -1,0 +1,17 @@
+{
+    "name": "webidea24/magento2-shared-increment-id",
+    "description": "Magento 2 Module to enable shared increment ids",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Webidea24\\SharedIncrementId\\": ""
+        }
+    }
+}
