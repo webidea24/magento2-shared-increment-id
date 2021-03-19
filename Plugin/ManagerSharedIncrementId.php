@@ -30,7 +30,7 @@ class ManagerSharedIncrementId
     {
         $config = $this->scopeConfig->getValue('wi24_shared_increment_id/general') ?: [];
         if (isset($config['enabled']) && ((bool)$config['enabled'])) {
-            $handledEntities = $config['enabled_for_entity_types'] ?? [];
+            $handledEntities = $config['enabled_for_entity_types'] ?? '';
             $handledEntitiesArray = explode(',', $handledEntities);
 
             if (in_array($entityType, $handledEntitiesArray, true)) {
